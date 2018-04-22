@@ -46,7 +46,7 @@ public class MultiStepDef {
 	
 	@Then("User Mobile field should be blank")
 	public void user_Mobile_field_should_be_blank() throws InterruptedException{
-		String mobileActual =driver.findElement(By.name("lastname")).getAttribute("value");
+		String mobileActual =driver.findElement(By.name("reg_email__")).getAttribute("value");
 		Assert.assertEquals("", mobileActual);
 		Thread.sleep(1000);
 	}
